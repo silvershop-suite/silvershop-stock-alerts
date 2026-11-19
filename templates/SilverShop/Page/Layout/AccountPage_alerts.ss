@@ -1,4 +1,4 @@
-<%-- Account-area "My alerts" section (the /account/alerts action, silvershop/stock-alerts). Mirrors the other
+<%-- Account-area "My alerts" section (the /account/alerts action, silvershop-suite/stock-alerts). Mirrors the other
      AccountPage_<action> templates: account navigation + the section content. Override in your theme to restyle
      (the storefront theme ships a styled version). --%>
 <% include SilverShop\Includes\AccountNavigation %>

@@ -17,7 +17,7 @@ use Symfony\Component\Console\Input\InputOption;
  * CLI runner / backstop for back-in-stock alerts — the same scan the recurring {@link ScanStockAlertsJob} performs,
  * runnable from cron without a job worker. Dry-run by default (lists what is waiting); pass --run to actually
  * re-check availability and send. --schedule (re-)arms the recurring scan job. Mirrors
- * silvershop/reviews' SendReviewInvitationsTask.
+ * silvershop-suite/reviews' SendReviewInvitationsTask.
  */
 class SendStockAlertsTask extends BuildTask
 {

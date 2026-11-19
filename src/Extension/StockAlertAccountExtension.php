@@ -11,9 +11,9 @@ use SilverStripe\Security\Security;
 
 /**
  * Adds a "My alerts" section to the shop account area — an `account/alerts` page listing the member's active
- * back-in-stock and price-drop alerts with a one-click unsubscribe. Mirrors silvershop/wishlist's
+ * back-in-stock and price-drop alerts with a one-click unsubscribe. Mirrors silvershop-suite/wishlist's
  * WishlistAccountExtension (action + link accessor; the nav link is rendered by the theme's AccountNavigation
- * override, guarded on the accessor's presence) and silvershop/newsletter's account section.
+ * override, guarded on the accessor's presence) and silvershop-suite/newsletter's account section.
  *
  * Only attached when silvershop/core is installed (the extension targets AccountPageController, registered in
  * the module's _config).

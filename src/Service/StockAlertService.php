@@ -27,14 +27,14 @@ use SilverStripe\SiteConfig\SiteConfig;
 /**
  * The orchestration layer for stock alerts: it upserts a {@link StockAlert} for an email + buyable, drives the
  * double-opt-in / unsubscribe lifecycle, sends the tokenised confirm and "back in stock" emails (sender identity
- * via silvershop/store-profile when present), and does the one-shot restock dispatch — gathering the Verified
+ * via silvershop-suite/store-profile when present), and does the one-shot restock dispatch — gathering the Verified
  * waiters for a buyable, claiming each atomically (flip to Notified *before* sending, so a crashed/retried job
  * never double-sends), then emailing.
  *
  * It is the single place the opt-in policy and the send logic live, shared by the controller, the instant
  * {@link NotifyBackInStockJob}, the recurring {@link \SilverShop\StockAlerts\Job\ScanStockAlertsJob} backstop and
- * the {@link \SilverShop\StockAlerts\Task\SendStockAlertsTask} CLI runner. Mirrors silvershop/newsletter's
- * NewsletterService (DOI decision table + sender identity) and silvershop/reviews' service shape.
+ * the {@link \SilverShop\StockAlerts\Task\SendStockAlertsTask} CLI runner. Mirrors silvershop-suite/newsletter's
+ * NewsletterService (DOI decision table + sender identity) and silvershop-suite/reviews' service shape.
  */
 class StockAlertService
 {
@@ -838,7 +838,7 @@ class StockAlertService
     /**
      * Launder a buyable to mixed so its optional silvershop/stock / Variation methods (hasAvailableStock,
      * isVariation, Product, ...), reached via hasMethod()/__call, analyse cleanly whether or not those modules are
-     * present. Mirrors silvershop/storefront's StorefrontStockExtension.
+     * present. Mirrors silvershop-suite/storefront's StorefrontStockExtension.
      *
      * @param mixed $buyable
      * @return mixed

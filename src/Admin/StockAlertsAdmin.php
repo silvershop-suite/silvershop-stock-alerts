@@ -9,7 +9,7 @@ use SilverStripe\Admin\ModelAdmin;
 
 /**
  * CMS area listing stock alerts — filter by Type / Status / email, see who is waiting on what and which alerts
- * have been notified. Mirrors silvershop/reviews' ReviewsAdmin.
+ * have been notified. Mirrors silvershop-suite/reviews' ReviewsAdmin.
  */
 class StockAlertsAdmin extends ModelAdmin
 {

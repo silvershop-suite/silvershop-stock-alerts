@@ -22,8 +22,8 @@ use SilverStripe\Security\SecurityToken;
 
 /**
  * Public endpoint for stock alerts: the buy-box subscribe POST, and the tokenised one-click double-opt-in confirm
- * and unsubscribe landings. Routed at `stock-alert` (see _config/routes.yml), mirroring silvershop/newsletter's
- * NewsletterController and silvershop/reviews' ReviewInvitationController.
+ * and unsubscribe landings. Routed at `stock-alert` (see _config/routes.yml), mirroring silvershop-suite/newsletter's
+ * NewsletterController and silvershop-suite/reviews' ReviewInvitationController.
  *
  * subscribe() answers JSON to the theme's notify.js (progressive enhancement) and, for a no-JS POST, stashes a
  * one-shot success flash and redirects back to the product (the buy box then renders the "check your email" state).

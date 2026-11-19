@@ -21,7 +21,8 @@ use SilverStripe\Security\SecurityToken;
 /**
  * Exposes the subscribe endpoint + form helpers on the product page, for the storefront buy-box / sticky-bar
  * back-in-stock notify form (`.silvershop-stock-alert #notify-form`) AND the price-drop "watch price" control
- * (`#watch-price-form`, {@see WatchPriceForm.ss}). Mirrors silvershop/wishlist's WishlistProductControllerExtension.
+ * (`#watch-price-form`, {@see WatchPriceForm.ss}). Mirrors silvershop-suite/wishlist's
+ * WishlistProductControllerExtension.
  *
  * @extends Extension<\SilverShop\Page\ProductController>
  */

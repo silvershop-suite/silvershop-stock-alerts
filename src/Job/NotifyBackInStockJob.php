@@ -16,7 +16,7 @@ use Symbiote\QueuedJobs\Services\QueuedJobService;
  * {@link StockAlertService::notifyBackInStock()} (which claims each row atomically, so a retry never double-sends).
  * Retryable + visible in QueuedJobAdmin — the reason symbiote/silverstripe-queuedjobs is a hard requirement.
  *
- * Mirrors silvershop/newsletter's NewsletterSyncJob. The recurring {@link ScanStockAlertsJob} is the backstop and
+ * Mirrors silvershop-suite/newsletter's NewsletterSyncJob. The recurring {@link ScanStockAlertsJob} is the backstop and
  * {@link \SilverShop\StockAlerts\Task\SendStockAlertsTask} the CLI runner over the same service.
  *
  * @property string $BuyableClass
